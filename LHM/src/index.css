@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .rotate-x-2 {
+    transform: rotateX(2deg);
+  }
+  
+  .rotate-x-0 {
+    transform: rotateX(0deg);
+  }
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
